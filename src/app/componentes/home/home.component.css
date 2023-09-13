@@ -1,0 +1,187 @@
+.row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.container{
+    width: 100%;
+}
+.btn-neon{
+    position: relative;
+    display:inline-block ;
+    padding: 15px 30px;
+    color: #4CBFFF(27, 24, 24);
+    letter-spacing: 4px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    border-radius: 15px;
+}
+.btn-neon:hover{
+    background:#4CBFFF;
+    color: white;
+    box-shadow: 0 0 10px #4CBFFF,0 0 40px #4CBFFF,0 0 80px #4CBFFF;
+    transition-delay: 1s;
+}
+.btn-neon span{
+    position: absolute;
+    display: block;
+}
+#span1{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#4CBFFF);
+}
+.btn-neon:hover #span1{
+    left: 100%;
+    transition: 1s;
+}
+#span3{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#4CBFFF);
+}
+.btn-neon:hover #span3{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#span2{
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#4CBFFF);
+}
+.btn-neon:hover #span2{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#span4{
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#4CBFFF);
+}
+.btn-neon:hover #span4{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+#texto{
+    margin-top: 200px;
+    padding: 50px;
+}
+a{
+    margin-top: 50px;
+}
+#texto2{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;
+    background: gainsboro;
+}
+#grey{
+    color: grey;
+    margin-top: 50px;
+}
+#texto3{
+    height: 300px;
+    padding-top: 100px;
+}
+#cuadro{
+    background: gainsboro;
+}
+#caja{
+    height: 750px;
+    display: flex;
+}
+#texto4{
+    color: black;
+    height: 750px;
+    align-items: left;
+    justify-content: center;
+    flex-direction:column;
+    margin-top: 25px;
+    padding: 25px;
+}
+.txt{
+    color:#4CBFFF ;
+    margin-top: 80px;
+}
+#texto5{
+    background-color: #4CBFFF;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#porque{
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.slide-text{
+    background-color: aquamarine;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 30px;
+    padding-right: 20px;
+    color: white
+}
+.mensajes{
+    overflow:hidden ;
+}
+ul, li{
+    list-style: none;
+    color: white
+}
+ul{
+    width: 1200px;
+    height: 70px;
+    position: relative;
+    animation: slide 5s cubic-bezier(0.68,-0.55,0.27,1.55)infinite;
+}
+li{
+    position: absolute;
+    height: 70px;
+    top: 200%;
+    line-height: 70px;
+    font-size: 45px;
+}
+li:first-child{
+    top: 100%;
+}
+li:last-child{
+    top: 300%;
+}
+@keyframes slide{
+    0%{
+        transform: translateY(0);
+    }
+    15%,30%{
+        transform: translateY(-100%);
+    }
+    45%,60%{
+        transform: translateY(-200%);
+    }
+    75%,90%{
+        transform: translateY(-300%);
+    }
+    100%{
+        transform: translateY(-400%);
+    }
+}
