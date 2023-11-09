@@ -1,10 +1,14 @@
+
 .row{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    
 }
-.container{
-    width: 100%;
+#imagen{
+    background-image: url(^assets/imagenes/tarjetas.png);
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    border-radius: 15px;
 }
 .btn-neon{
     position: relative;
@@ -17,6 +21,7 @@
     overflow: hidden;
     transition: 0.2s;
     border-radius: 15px;
+    
 }
 .btn-neon:hover{
     background:#4CBFFF;
@@ -75,13 +80,34 @@
     transition: 1s;
     transition-delay: 0.75s;
 }
-#texto{
-    margin-top: 200px;
-    padding: 50px;
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
 }
-a{
+p{
+    display: flex;
+    padding-left: 135px;
+    margin-top: 25px;
+    font-size: x-large;
+}
+#pedir{
     margin-top: 50px;
+    margin-left: 25%;
+    cursor: pointer;
 }
+
+
+
+
+
+
+
+
+
+
+
 #texto2{
     height: 500px;
     display: flex;
@@ -89,83 +115,100 @@ a{
     justify-content: center;
     flex-direction:column;
     background: gainsboro;
+    font-family:'League Spartan', sans-serif ;
 }
 #grey{
     color: grey;
     margin-top: 50px;
 }
+
+
+
+
+
 #texto3{
     height: 300px;
     padding-top: 100px;
+    padding-left: 150px;
+    background-color: white;
+    font-size: xx-large;
+    font-family:'League Spartan', sans-serif ;
+
 }
-#cuadro{
-    background: gainsboro;
-}
+
+
+
+
+
+
+
+
 #caja{
-    height: 750px;
+    height: 800px;
     display: flex;
+    background-image: url(^assets/imagenes/amigos.png);
+    background-size: cover;
+    background-position: center;
+    margin-top: 30px;
+    border-radius: 20px;
+    
 }
 #texto4{
     color: black;
-    height: 750px;
-    align-items: left;
+    height: 800px;
     justify-content: center;
     flex-direction:column;
-    margin-top: 25px;
-    padding: 25px;
+   
+    padding: 35px;
 }
 .txt{
     color:#4CBFFF ;
-    margin-top: 80px;
+    margin-top: 60px;
+    margin-left: 132px;
 }
-#texto5{
-    background-color: #4CBFFF;
-    color: white;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#porque{
-    margin-left: 100px;
-    margin-top: 40px;
-}
+
+
+
+
+
+
+
+
 .slide-text{
     background-color: aquamarine;
     height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-h2{
-    font-size: 30px;
-    padding-right: 20px;
-    color: white
+    margin-top: 30px;
 }
 .mensajes{
     overflow:hidden ;
 }
-ul, li{
+.movimiento, l.nombres{
     list-style: none;
     color: white
 }
-ul{
+.movimiento{
     width: 1200px;
     height: 70px;
     position: relative;
     animation: slide 5s cubic-bezier(0.68,-0.55,0.27,1.55)infinite;
+    margin-left: 200px
 }
-li{
+.nombres{
     position: absolute;
     height: 70px;
     top: 200%;
     line-height: 70px;
     font-size: 45px;
+    font-family:'League Spartan', sans-serif ;
+
 }
-li:first-child{
+.nombres:first-child{
     top: 100%;
 }
-li:last-child{
+.nombres:last-child{
     top: 300%;
 }
 @keyframes slide{
@@ -185,3 +228,26 @@ li:last-child{
         transform: translateY(-400%);
     }
 }
+
+
+
+
+
+
+
+#texto5{
+    background-color: #4CBFFF;
+    color: white;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#porque{
+    margin-left: 75px;
+    margin-top: 40px;
+}
+
+
+
+

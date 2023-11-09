@@ -1,0 +1,30 @@
+table{
+    background-color: #7fffd4;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    border-radius: 15px;
+    border-color: inherit;
+}
+.contenedor{
+    position: relative;
+    height: 639px;
+    width: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16191c;
+    border: solid 5px white;
+}
+caption{
+    color: white;
+}
+button{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+}
+.modal-body{
+    background-color: aliceblue;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+}

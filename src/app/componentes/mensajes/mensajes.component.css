@@ -1,0 +1,11 @@
+#mismensajes{
+    position: absolute;
+    right: 0;
+    width: 40%;
+    z-index: 99999;
+    overflow: hidden;
+
+}
+#mismensajes {
+    transform: translateX(0%);
+}

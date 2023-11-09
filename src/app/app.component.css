@@ -1,0 +1,5 @@
+#imagen{
+    background-image:url(../assets/imagenes/tarjetas.png) ;
+    background-position: center;
+    background-size: cover;
+}

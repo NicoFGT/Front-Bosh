@@ -1,6 +1,6 @@
 .piepagina {
     width: 100%;
-    background-color: #000000;
+    background-color: white;
     color: grey;
 }
 .piepagina .grupo1 {
@@ -26,14 +26,14 @@
 }
 
 .piepagina .grupo1 .box h2{
-    color: #fff;
+    color: #4CBFFF;
     margin-bottom: 25px;
     font-size: 20px;
     font-style: 'Lucida Sans';
 }
 
 .piepagina .grupo1 .box p{
-    color: #efefef;
+    color: #4CBFFF;
     margin-bottom: 10px;
 }
 
@@ -45,7 +45,7 @@
     line-height: 45px;
     color: #fff;
     margin-right: 10px;
-    background-color: #000911;
+    background-color: #4CBFFF;
     text-align: center;
     transition: all 300ms ease;
     border-radius: 5px;
@@ -56,10 +56,10 @@
 }
 
 .piepagina .grupo2{
-    background-color: #000000;
+    background-color: white;
     padding: 15px 10px;
     text-align: center;
-    color: #fff;
+    color: #4CBFFF;
     font-family:'League Spartan', sans-serif;
 }
 a{

@@ -1,0 +1,23 @@
+.img-fluid {
+    max-width: 100px;
+    height: 31px;
+    margin-top: 26px;
+}
+.menusuperior {
+    height: 100px;
+    width: 100%;
+    background-color: #16191c;
+    position: relative;
+}
+.cerrarsesion {
+    position: absolute;
+    right: 40px;
+    border: solid 1px #4CBFFF;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 400;
+    padding: 4px;
+    cursor: pointer;
+    margin-top: -31px;
+    color: white;
+    border-radius: 5px;
+}

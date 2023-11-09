@@ -1,0 +1,34 @@
+.imagenes{
+    width: 1339px;
+    height: 639px;
+    position: relative;
+    float: right;
+}
+#imagen1{
+    background-image: url(^assets/imagenes/img1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 639px;
+    
+}
+#imagen2{
+    background-image: url(^assets/imagenes/img2.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 639px;
+    
+}
+#imagen3{
+    background-image: url(^assets/imagenes/img3.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 639px;
+    
+}
+#imagen4{
+    background-image: url(^assets/imagenes/img4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 639px;
+    
+}

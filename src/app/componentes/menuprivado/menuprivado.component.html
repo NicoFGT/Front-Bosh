@@ -1,0 +1,26 @@
+<div class="menugeneral">
+    <div class="datosusuarios">
+        <img src="assets/imagenes/perfil.png">
+        <div class="nombreusuario">{{ nombres }}</div>
+        <div class="Rol usuario" *ngIf="rol == '2'">Cliente</div>
+        <div class="Rol usuario" *ngIf="rol == '1'">Administrador</div>
+    </div>
+    <div class="menu">
+        <div class="item">
+            <div class="opcion" routerLink="/inicio">Inicio</div>
+        </div>
+        <div class="item">
+            <div class="opcion" routerLink="/clientes">Clientes</div>
+        </div>
+        <div class="item">
+            <div class="opcion" routerLink="/reportes">Reportes</div>
+        </div>
+        <div class="item">
+            <div class="opcion" routerLink="/usuarios" >Transacciones</div>
+        </div>
+        <div class="item">
+            <div class="opcion" >configuraciones</div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,41 @@
+.datosusuarios {
+    width: 180px;
+    background-color: #16191c;
+    text-align: center;
+    color: white;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+}
+.datosusuarios img {
+    width: 116px;
+    border-radius: 50%;
+    height: 123px;
+    margin-bottom: 14px;
+    margin-top: 22px;
+    border: solid 4px #4CBFFF;
+}
+.menu {
+    width: 180px;
+    background-color: #16191c;
+    padding-left: 16px;
+    height: calc(100vh - 288px);
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+.item {
+    margin-top: 5px;
+    font-size: larger;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: 1ms ease-in-out;
+}
+.item:hover{
+    padding-left: 5px;
+}
+.menugeneral{
+    float: left;
+}
+.menu{
+    float: left;
+}

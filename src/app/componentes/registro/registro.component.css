@@ -1,0 +1,98 @@
+body{
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light);
+    min-height: 100vh;
+    
+}
+.bg-dark-x{
+    background-color: white;
+    color: #4CBFFF;
+}
+.form-control, .btn{
+    min-height: 3.125rem;
+    line-height: initial;
+    padding: 15px;
+    margin-top: 5px;
+}
+#apellidos{
+    margin-left: 5px;
+    width: 98%;
+}
+#google{
+    margin-right: 5px;
+}
+#facebook{
+    margin-left: 5px;
+}
+i{
+    margin-right: 5px;
+}
+.link{
+    color: #4CBFFF;
+    text-decoration: none;
+}
+.link:hover{
+    color: #4CBFFF;
+}
+
+section{
+    width: 600px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    position: absolute;
+    z-index: 9999;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #16191c;
+}
+.burbujas{
+    position: relative;
+    display: flex;
+    z-index: 15;
+}
+.burbujas span{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: #4cb3dc;
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 10px #4cb3dc44,
+    0 0 50px #4cb3dc,
+    0 0 100px #4cb3dc;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+}
+.burbujas span:nth-child(even){
+    background: #7fffd4;
+    box-shadow: 0 0 0 10px #7fffd444,
+    0 0 50px #7fffd4,
+    0 0 100px #7fffd4;
+
+
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(100vh) scale(0);
+    }
+    100%{
+        transform: translateY(-70vh) scale(1);
+    }
+}

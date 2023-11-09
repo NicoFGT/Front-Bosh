@@ -1,0 +1,90 @@
+<app-headerprivado></app-headerprivado>
+<app-menuprivado></app-menuprivado>
+<div class="contenedor">
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cliente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" (click)="nuevo()"></button>
+        </div>
+        <div class="modal-body">
+  
+          <div class="row">
+            <div class="form-group col-12">
+              <label for="nombres">Nombres</label>
+              <input type="text" class="form-control" id="nombres" [(ngModel)]="nombres">
+            </div>
+            <div class="form-group col-12">
+              <label for="apellidos">Apellidos</label>
+              <input type="text" class="form-control" id="apellidos" [(ngModel)]="apellidos">
+            </div>
+            <div class="form-group col-12">
+              <label for="identificacion">Identificacion</label>
+              <input type="text" class="form-control" id="identificacion" [(ngModel)]="identificacion">
+            </div>
+            <div class="form-group col-12">
+              <label for="direccion">Direccion</label>
+              <input type="text" class="form-control" id="direccion" [(ngModel)]="direccion">
+            </div>
+            <div class="form-group col-12">
+              <label for="telefono">Telefono</label>
+              <input type="text" class="form-control" id="telefono" [(ngModel)]="telefono">
+            </div>
+            <div class="form-group col-12">
+              <label for="ingresos">Ingresos</label>
+              <input type="text" class="form-control" id="ingresos" [(ngModel)]="ingresos">
+            </div>
+            <div class="form-group col-12">
+              <label for="correo">Email</label>
+              <input type="text" class="form-control" id="correo" [(ngModel)]="correo">
+            </div>
+          </div>
+  
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" *ngIf="miid == ''" (click)="guardar()">Guardar</button>
+          <button type="button" class="btn btn-danger" *ngIf="miid != ''" (click)="eliminar()">Eliminar</button>
+          <button type="button" class="btn btn-primary" *ngIf="miid != ''"  (click)="actualizar()">Actualizar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="container">
+      <div class="row">
+          <table class="table caption-top table-hover">
+              <caption><h3>Lista de Clientes Bosh</h3></caption>
+              <thead>
+                <tr>
+                  <th scope="col">Nombres</th>
+                  <th scope="col">Apellidos</th>
+                  <th scope="col">Identificacion</th>
+                  <th scope="col">Direccion</th>
+                  <th scope="col">telefono</th>
+                  <th scope="col">ingresos</th>
+                  <th scope="col">Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let item of datos" (click)="cargarid(item._id)">
+                  <td>{{item.nombres}}</td>
+                  <td>{{item.apellidos}}</td>
+                  <td>{{item.identificacion}}</td>
+                  <td>{{item.direccion}}</td>
+                  <td>{{item.telefono}}</td>
+                  <td>{{item.ingresos | currency}}</td>
+                  <td>{{item.correo}}</td>
+                  
+                </tr>
+              </tbody>
+            </table>
+      </div>
+      <button id="btn" type="button" class="btn btn-primary" (click)="nuevo()">
+        Nuevo Cliente
+      </button>
+  </div>
+  
+</div>

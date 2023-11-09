@@ -1,19 +1,27 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg ">
     <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="assets/imagenes/logo.png" width="180">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav nav justify-content-center">
-                <li class="nav-item"><a href="" class="nav-link">Inicio</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Registrarse</a></li>
-                <li class="nav-item"><a href="" class="nav-link">Ingresar</a></li>
-            </ul>
-        </div>
-
+      <a class="navbar-brand" href="#">
+        <img src="assets/imagenes/logo.png" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav justify-content-cente">
+          <li class="nav-item col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" routerLink="/registro">
+            <a class="nav-link active" aria-current="page">Inicio</a>
+          </li>
+          <li class="nav-item col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" routerLink="/registro">
+            <a class="nav-link"  >Registro</a>
+          </li>
+          <li class="nav-item col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" routerLink="/solicitar">
+            <a class="nav-link" >Solicitar</a>
+          </li>
+          <li class="nav-item col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3" routerLink="/login">
+            <a class="nav-link" >Ingresar</a>
+          </li>
+          
+        </ul>
+      </div>
     </div>
-</nav>
+  </nav>

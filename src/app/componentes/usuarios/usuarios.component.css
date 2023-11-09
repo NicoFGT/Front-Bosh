@@ -1,0 +1,9 @@
+.tablero{
+    background-image: url(^assets/imagenes/Frame.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    width: 80%;
+    float: right;
+    
+}
